@@ -1,8 +1,8 @@
 # Importadora de Bazar
 
-Breve descripcion de mi proyecto
+Tienda Online de Importadora de Bazar
 
-**Lista de Tecnologicas**
+**Lista de Tecnologias**
 
 1. HTML5
 2. CSS3
