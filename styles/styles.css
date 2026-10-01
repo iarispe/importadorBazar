@@ -11,19 +11,28 @@
     --color-logo-secundario: #DBFF43;
     --color-logo-contraste: #025237;
     --color-logo-alternativo: #A0BBB2;
-    --color-fondo-principal: #E8E8E8;
+    --color-fondo-principal: #F9F9F9;
+    --color-fondo-secundario: #E8E8E8;
     --color-fondo-contraste: #1C1C1C;
     --color-texto-blanco: #FFFFFF;
     --color-texto-negro: #000000;
     --fuente-principal: "Poppins", sans-serif;
     --titulos-principales: 2.5rem;
-    --titulos-secundarios: 1.3rem;
-    --titulos-chicos: 0.8rem;
+    --titulos-secundarios: 1.8rem;
+    --titulos-chicos: 1.2rem;
+    --parrafo-principal: 1rem;
 }
 
 /* ---------- ESTILOS GENERALES ---------- */
 body{
     font-family: "Poppins", sans-serif;
+    font-size: var(--parrafo-principal);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.6;
+    color: var(--color-texto-negro);
+    background-color: var(--color-fondo-principal);
+    overflow-x: hidden;
 }
 li{
     list-style-type: none;
