@@ -1,25 +1,34 @@
-<!---------- RESET ---------->
+/* ---------- RESET ---------- */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-<!---------- ESTILOS GENERALES ---------->
+/* ---------- ESTILOS GENERALES ---------- */
 body{
     font-family: "Poppins", sans-serif;
 }
 li{
     list-style-type: none;
 }
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1{
+    color: aqua;
+}
 
-<!---------- ENCABEZADO ---------->
+/* ---------- ENCABEZADO ---------- */
 header nav ul{
     display: flex;
     justify-content: center;
     gap: 1.2rem;
 }
 
-h1{
-    color: aqua;
-}
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+
+/* ---------- PIE DE PAGINA ---------- */
+
