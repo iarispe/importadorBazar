@@ -1,19 +1,25 @@
-* {
+<!---------- RESET ---------->
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+<!---------- ESTILOS GENERALES ---------->
 body{
     font-family: "Poppins", sans-serif;
-}
-h1{
-    color: aqua;
 }
 li{
     list-style-type: none;
 }
+
+<!---------- ENCABEZADO ---------->
 header nav ul{
     display: flex;
     justify-content: center;
     gap: 1.2rem;
+}
+
+h1{
+    color: aqua;
 }
