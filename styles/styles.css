@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+/* ---------- VARIABLES GLOBALES ---------- */
+:root {
+    --color-logo-principal: #C0DD17;
+    --color-logo-secundario: #DBFF43;
+    --color-logo-contraste: #025237;
+    --color-logo-alternativo: #A0BBB2;
+    --color-fondo-principal: #E8E8E8;
+    --color-fondo-contraste: #1C1C1C;
+    --color-texto-blanco: #FFFFFF;
+    --color-texto-negro: #000000;
+    --fuente-principal: "Poppins", sans-serif;
+    --titulos-principales: 2.5rem;
+    --titulos-secundarios: 1.3rem;
+    --titulos-chicos: 0.8rem;
+}
+
 /* ---------- ESTILOS GENERALES ---------- */
 body{
     font-family: "Poppins", sans-serif;
@@ -18,7 +34,16 @@ img, picture, video, canvas, svg {
     display: block;
 }
 h1{
-    color: aqua;
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-principales);
+}
+h2{
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-secundarios);
+}
+h3, h4, h5, h6{
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-chicos);
 }
 
 /* ---------- ENCABEZADO ---------- */
@@ -31,4 +56,6 @@ header nav ul{
 /* ---------- CONTENIDO PRINCIPAL ---------- */
 
 /* ---------- PIE DE PAGINA ---------- */
+
+/* ---------- MEDIA QUERIES ---------- */
 
