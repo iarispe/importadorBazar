@@ -104,9 +104,13 @@ nav ul li a::after{
     background-color: var(--color-logo-principal);
     transition: width 0.3s ease, left 0.3s ease;
 }
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.current::after{
     width: 100%;
     left: 0;
+}
+nav ul li a.current{
+    color: var(--color-logo-principal);
 }
 
 /* ---------- CONTENIDO PRINCIPAL ---------- */
