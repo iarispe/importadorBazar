@@ -69,6 +69,9 @@ header{
     align-items: center;
     height: 5rem;
 }
+.logo, .usuario-carrito{
+    padding: 0 8px;
+}
 nav{
     height: 100%;
 }
@@ -89,6 +92,21 @@ nav ul li a{
     align-items: center;
     height: 100%;
     padding: 0 8px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-logo-principal);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* ---------- CONTENIDO PRINCIPAL ---------- */
