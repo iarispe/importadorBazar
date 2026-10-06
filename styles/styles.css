@@ -116,6 +116,37 @@ nav ul li a.current{
 /* ---------- CONTENIDO PRINCIPAL ---------- */
 
 /* ---------- PIE DE PAGINA ---------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--color-fondo-contraste);
+    color: var(--color-texto-blanco);
+}
+footer section{
+    padding: 0.8rem 2rem;
+}
+footer section:not(.sec-derechos-footer){
+    flex: 1;
+    min-width: 15.7rem;
+}
+.sec-derechos-footer{
+    flex-basis: 100%;
+    text-align: center;
+}
+footer h4{
+    color: var(--color-logo-principal);
+    padding-bottom: 0.5rem;
+}
+.redes-footer ul li a img{
+    width: 2.5rem;
+    height: auto;
+}
+.redes-footer ul{
+    display: flex;
+    gap: 0.2rem;
+}
 
 /* ---------- MEDIA QUERIES ---------- */
 
