@@ -124,10 +124,10 @@ footer{
     background-color: var(--color-fondo-contraste);
     color: var(--color-texto-blanco);
 }
-footer section{
+footer > div{
     padding: 0.8rem 2rem;
 }
-footer section:not(.sec-derechos-footer){
+footer div:not(.sec-derechos-footer){
     flex: 1;
     min-width: 15.7rem;
 }
