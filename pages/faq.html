@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes</title>
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="../styles/styles.css">
+
     <!-- Fuente Roboto y Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,7 +111,7 @@
 
     <!--------------------- PIE DE PAGINA --------------------->
     <footer>
-        <section class="sec-menu-footer">
+        <div class="sec-menu-footer">
             <div>
                 <h4>Menu</h4>
             </div>
@@ -117,8 +123,8 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="sec-info-footer">
+        </div>
+        <div class="sec-info-footer">
             <div>
                 <h4>Informacion</h4>
             </div>
@@ -130,8 +136,8 @@
                     <li><a href="#">Politica de Privacidad</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="sec-redes-footer">
+        </div>
+        <div class="sec-redes-footer">
             <div>
                 <h4>Nuestras Redes</h4>
             </div>
@@ -143,13 +149,16 @@
                     <li><a href="https://www.whatsapp.com" target="_blank"><img src="../assets/logos/whatsapp.png" alt="Envianos un WhatsApp"></a></li>
                 </ul>
             </div>
-        </section>
-        <section class="sec-derechos-footer">
+        </div>
+        <div class="sec-derechos-footer">
             <div>
                 <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
             </div>
-        </section>
+        </div>
     </footer>
+
+    <!-- Funcionalidades de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
