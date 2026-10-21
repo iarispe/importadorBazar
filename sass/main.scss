@@ -1,0 +1,155 @@
+/* ---------- RESET ---------- */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- VARIABLES GLOBALES ---------- */
+:root{
+    --color-logo-principal: #C0DD17;
+    --color-logo-secundario: #DBFF43;
+    --color-logo-contraste: #025237;
+    --color-logo-alternativo: #A0BBB2;
+    --color-fondo-principal: #F9F9F9;
+    --color-fondo-secundario: #E8E8E8;
+    --color-fondo-contraste: #1C1C1C;
+    --color-texto-blanco: #FFFFFF;
+    --color-texto-negro: #000000;
+    --fuente-principal: "Poppins", sans-serif;
+    --titulos-principales: 2.5rem;
+    --titulos-secundarios: 1.8rem;
+    --titulos-chicos: 1.2rem;
+    --parrafo-principal: 1rem;
+}
+
+/* ---------- ESTILOS GENERALES ---------- */
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: var(--parrafo-principal);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.6;
+    color: var(--color-texto-negro);
+    background-color: var(--color-fondo-principal);
+    overflow-x: hidden;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: var(--color-logo-principal);
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1{
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-principales);
+}
+h2{
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-secundarios);
+}
+h3, h4, h5, h6{
+    color: var(--color-texto-negro);
+    font-size: var(--titulos-chicos);
+}
+
+/* ---------- ENCABEZADO ---------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+.logo, .usuario-carrito{
+    padding: 0 8px;
+}
+nav{
+    height: 100%;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+nav ul{
+    height: 100%;
+    align-items: center;
+}
+nav ul li{
+    height: 100%;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-logo-principal);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+nav ul li a:hover::after,
+nav ul li a.current::after{
+    width: 100%;
+    left: 0;
+}
+nav ul li a.current{
+    color: var(--color-logo-principal);
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+
+/* ---------- PIE DE PAGINA ---------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--color-fondo-contraste);
+    color: var(--color-texto-blanco);
+}
+footer > div{
+    padding: 0.8rem 2rem;
+}
+footer div:not(.sec-derechos-footer){
+    flex: 1;
+    min-width: 15.7rem;
+}
+.sec-derechos-footer{
+    flex-basis: 100%;
+    text-align: center;
+}
+footer h4{
+    color: var(--color-logo-principal);
+    padding-bottom: 0.5rem;
+}
+.redes-footer ul li a img{
+    width: 2.5rem;
+    height: auto;
+}
+.redes-footer ul{
+    display: flex;
+    gap: 0.2rem;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
