@@ -41,3 +41,5 @@ Puedes acceder o visualizar el proyecto de las siguientes maneras:
 ## 📬 Contacto y Enlaces
 
 *   **Repositorio GitHub:** [https://github.com/iarispe/importadorBazar](https://github.com/iarispe/importadorBazar)
+
+*   **GitHub Pages:** [https://iarispe.github.io/importadorBazar/index.html](https://iarispe.github.io/importadorBazar/index.html)
