@@ -174,119 +174,125 @@
         </section>
 
         <!--------------------- LOS MAS PEDIDOS --------------------->
-        <section>
-            <div>
-                <h2>Los mas pedidos</h2>
-                <p>Descubre los productos favoritos de nuestros clientes</p>
-            </div>
+        <section class="container my-5">
+            <div class="d-flex justify-content-between align-items-end mb-3">
+                <div>
+                    <h2>Los mas pedidos</h2>
+                    <p class="text-muted">Descubre los productos favoritos de nuestros clientes</p>
+                </div>
 
+                <div class="d-none d-md-flex gap-2">
+                    <button class="btn btn-outline-dark rounded-circle p-2" type="button" data-bs-target="#carouselMasPedidos" data-bs-slide="prev" aria-label="Anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline-dark rounded-circle p-2" type="button" data-bs-target="#carouselMasPedidos" data-bs-slide="next" aria-label="Siguiente">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
             <div class="carousel slide" id="carouselMasPedidos" data-bs-ride="carousel">
                 <ul class="carousel-inner">
-                    <li class="carousel-item active">
-                        <div class="row">
+                    <li class="carousel-item my-1 active">
+                        <div class="row g-4">
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/taza-ceramica-grabado-coffe.jpg" alt="Taza de cerámica beige con la palabra Coffe grabada en relieve, apoyada sobre una superficie de madera.">
-                                    <div>
-                                        <h3>Tazas Coffee</h3>
-                                        <span>$12.500</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Taza Coffee</h3>
+                                        <span class="fw-bold fs-5 my-2">$12.500</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/plato-porcelana-blanca-circular.jpg" alt="Plato circular de porcelana blanca con diseño texturizado en relieve de líneas geométricas entrelazadas.">
-                                    <div>
-                                        <h3>Vajilla Porcelana</h3>
-                                        <span>$19.900</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Vajilla Porcelana</h3>
+                                        <span class="fw-bold fs-5 my-2">$19.900</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/set-de-ollas-acero-inoxidable-3-piezas.jpg" alt="Set de ollas y cacerolas de acero inoxidable con textura geométrica grabada y tapas metálicas.">
-                                    <div>
-                                        <h3>Set de Ollas 3 pcs</h3>
-                                        <span>$89.990</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Set de Ollas 3 pcs</h3>
+                                        <span class="fw-bold fs-5 my-2">$89.990</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/set-utensilios-de-silicona-5-piezas.jpg" alt="Set de 5 utensilios de cocina de silicona gris con mangos de madera, colgados en un soporte metálico sobre una mesada.">
-                                    <div>
-                                        <h3>Utensilios de Silicona 5 pcs</h3>
-                                        <span>$15.390</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Utensilios de Silicona 5 pcs</h3>
+                                        <span class="fw-bold fs-5 my-2">$15.390</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
                         </div>
                     </li>
 
-                    <li class="carousel-item">
-                        <div class="row">
+                    <li class="carousel-item my-1">
+                        <div class="row g-4">
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/manta-tejida-con-textura.jpg" alt="Manta tejida gruesa de lana en color beige con diseño de trenzas, apoyada sobre el respaldo de un sofá gris en un living luminoso.">
-                                    <div>
-                                        <h3>Manta Tejida</h3>
-                                        <span>$34.490</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Manta Tejida</h3>
+                                        <span class="fw-bold fs-5 my-2">$34.490</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/lampara-industrial-calida.jpg" alt="Lámpara de escritorio articulada de metal negro con luz LED cálida encendida.">
-                                    <div>
-                                        <h3>Lampara LED artiulado</h3>
-                                        <span>$12.490</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Lampara LED artiulado</h3>
+                                        <span class="fw-bold fs-5 my-2">$12.490</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/espejo-cuerpo-completo-2-metros.jpg" alt="Espejo de cuerpo entero rectangular con marco negro delgado, apoyado en una pared blanca reflejando una sala de estar moderna.">
-                                    <div>
-                                        <h3>Espejo Arqueado</h3>
-                                        <span>$65.490</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Espejo Arqueado</h3>
+                                        <span class="fw-bold fs-5 my-2">$65.490</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
 
                             <div class="col-md-3">
-                                <article>
+                                <article class="card h-100 shadow-sm border-0 p-3 text-start">
                                     <img src="./assets/images/products/set-de-mate-amargo-5-piezas.jpg" alt="Set de mate completo de 5 piezas con termo, mate forrado en cuero con detalles metálicos, bombilla y yerbera sobre una mesa de madera.">
-                                    <div>
-                                        <h3>Set de Mate 5 Piezas</h3>
-                                        <span>$42.990</span>
-                                        <button type="button">Comprar</button>
+                                    <div class="card-body d-flex flex-column p-0">
+                                        <h3 class="card-title text-truncate">Set de Mate 5 Piezas</h3>
+                                        <span class="fw-bold fs-5 my-2">$42.990</span>
+                                        <button type="button" class="btn btn-dark mt-auto">Comprar</button>
                                     </div>
                                 </article>
                             </div>
                         </div>
                     </li>
                 </ul>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMasPedidos" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMasPedidos" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
             </div>
         </section>
 
