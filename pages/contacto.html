@@ -40,32 +40,61 @@
 
     <!--------------------- CUERPO PRINCIPAL --------------------->
     <main>
-        <section class="container my-5" id="formulario-inicio">
+        <section class="container my-5">
             <div class="text-center mb-5">
-                <h2>Contacto y Ubicacion</h2>
+                <h1>Contacto y Ubicacion</h1>
                 <p>¿Tenes alguna duda o queres visitarnos? Escribinos o dejanos tu mensaje</p>
+            </div>
+
+            <div class="row g-4 mb-5 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h2 class="mb-2">Escribinos por WhatsApp</h2>
+                            <p class="text-muted small mb-0">+54 9 11 5963-****</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h2 class="mb-2">Nuestro correo electronico</h2>
+                            <p class="text-muted small mb-0">contacto@ecohogar.com.ar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h2 class="mb-2">Horarios de atencion</h2>
+                            <p class="text-muted small mb-0">Lunes a Viernes de 9 a 18 hs</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-lables">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
-                        </div>
+                    <div class="card shadow-sm border-0 p-4">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electronico:</label>
-                            <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
-                        </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electronico:</label>
+                                <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En que podemos ayudarte?"></textarea>
-                        </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En que podemos ayudarte?"></textarea>
+                            </div>
 
-                        <button type="submit" class="btn btn-dark w-100 py-2">Enviar</button>
-                    </form>
+                            <button type="submit" class="btn btn-dark w-100 py-2">Enviar</button>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="col-lg-6">
