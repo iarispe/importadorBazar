@@ -46,13 +46,49 @@
                 <p class="text-muted">Explora nuestra seleccion completa para tu hogar</p>
             </div>
             
-            <div class="row g-5">
-                <aside class="col-lg-2">
-                    <h2>Categorias</h2>
-                    <div>
-                        <h3>Bazar</h3>
-                        <h3>Decoracion</h3>
-                        <h3>Regaleria</h3>
+            <div class="row g-4 align-items-start">
+                <aside class="col-lg-3" aria-label="Filtros del catalogo">
+                    <div class="card border-0 shadow-sm p-3 p-md-4">
+                        <h2 class="fw-bold mb-3">Categorias</h2>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item px-0">
+                                <p class="fw-semibold mb-0 d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#filtroBazar" role="button"><span>Bazar</span><span>&#9662;</span></p>
+                                <ul class="collapse ps-3 mt-1" id="filtroBazar">
+                                    <li><span>Tazas y Vasos</span></li>
+                                    <li><span>Vajilla</span></li>
+                                    <li><span>Ollas y Sartenes</span></li>
+                                    <li><span>Utensilios de Cocina</span></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <p class="fw-semibold mb-0 d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#filtroDeco" role="button"><span>Decoracion</span><span>&#9662;</span></p>
+                                <ul class="collapse ps-3 mt-1" id="filtroDeco">
+                                    <li><span>Almohadones y Mantas</span></li>
+                                    <li><span>Iluminacion</span></li>
+                                    <li><span>Espejos</span></li>
+                                    <li><span>Cuadros y Adornos</span></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <p class="fw-semibold mb-0 d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#filtroRegaleria" role="button"><span>Regaleria</span><span>&#9662;</span></p>
+                                <ul class="collapse ps-3 mt-1" id="filtroRegaleria">
+                                    <li><span>Velas y Aromas</span></li>
+                                    <li><span>Mates y Sets</span></li>
+                                    <li><span>Kits de Regalo</span></li>
+                                    <li><span>Agendas y Papeleria</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 class="fw-bold mb-3">Precio</h2>
+                        <div class="mb-4">
+                            <label for="rangoPrecio" class="form-label small text-muted mb-1">Precio hasta</label>
+                            <input type="range" class="form-range" min="1000" max="100000" step="2000" id="rangoPrecio">
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>$1.000</span>
+                                <span>$100.000</span>
+                            </div>
+                        </div>
                     </div>
                 </aside>
 
