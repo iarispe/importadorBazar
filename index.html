@@ -41,13 +41,28 @@
     <!--------------------- CUERPO PRINCIPAL --------------------->
     <main>
         <!--------------------- PORTADA Y TITULO PRINCIPAL --------------------->
-        <section id="hero-principal">
-            <div>
-                <img loading="eager" fetchpriority="high" src="./assets/images/botella-acero-inoxidable-portada-horizontal.jpg" alt="Botellas de Acero Inoxidable de 750ml en un fondo blanco">
+        <section id="hero-principal" class="position-relative">
+            <div id="carouselHeroPrincipal" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img loading="eager" fetchpriority="high" src="./assets/images/botella-acero-inoxidable-portada-horizontal.jpg" class="d-block w-100" alt="Botellas de Acero Inoxidable de 750ml en un fondo blanco">
+                    </div>
+                    <div class="carousel-item">
+                        <img loading="eager" fetchpriority="high" src="./assets/images/vaso-termico-con-tapa-portada-horizontal.jpg" class="d-block w-100" alt="Vasos termicos de Acero Inoxidable en un fondo blanco">
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev w-auto h-auto top-50 bottom-auto translate-middle-y px-2 px-md-3" type="button" data-bs-target="#carouselHeroPrincipal" data-bs-slide="prev" aria-label="Anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next w-auto h-auto top-50 bottom-auto translate-middle-y px-2 px-md-3" type="button" data-bs-target="#carouselHeroPrincipal" data-bs-slide="next" aria-label="Siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
-            <div>
-                <h1>Bazar para tu Hogar</h1>
-                <p>Descubrí nuestro catálogo de bazar.</p>
+
+            <div class="position-absolute top-50 start-0 translate-middle-y ps-5 ms-2 pe-5">
+                <h1 class="h1 fw-bold mb-2">Bazar para tu Hogar</h1>
+                <p class="lead fs-5">Descubri nuestro catalogo.</p>
             </div>
         </section>
 
