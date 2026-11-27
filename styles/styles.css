@@ -75,6 +75,7 @@ h3, h4, h5, h6 {
 }
 
 /* ---------- ENCABEZADO ---------- */
+/*
 header {
   display: flex;
   justify-content: space-between;
@@ -133,6 +134,7 @@ nav ul li a.current::after {
 nav ul li a.current {
   color: var(--color-logo-principal);
 }
+*/
 
 /* ---------- CONTENIDO PRINCIPAL ---------- */
 /* ---------- PIE DE PAGINA ---------- */
