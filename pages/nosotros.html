@@ -18,24 +18,65 @@
 </head>
 <body>
     <!--------------------- ENCABEZADO --------------------->
-    <header>
-        <div class="logo">
-            <a href="../index.html">Eco Hogar</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#" class="current">Nosotros</a></li>
-                <li><a href="./catalogo.html">Catalogo</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar py-3">
+            <div class="container flex-nowrap">
+                <a href="../index.html" class="navbar-brand fw-bold fs-4 m-0">Eco Hogar</a>
+
+                <ul class="navbar-nav d-none d-lg-flex flex-row gap-3 mx-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nosotros.html" class="nav-link active" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./catalogo.html" class="nav-link">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-2 gap-sm-3">
+                    <a href="./carrito.html" class="btn btn-sm d-inline-flex align-items-center gap-1" aria-label="Carrito de compras">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                        <span class="d-none d-sm-inline">Carrito</span>
+                    </a>
+
+                    <a href="./login.html" class="btn btn-sm d-inline-flex align-items-center gap-1" aria-label="Ingresar a tu cuenta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                        </svg>
+                        <span class="d-none d-sm-inline">Ingresa</span>
+                    </a>
+
+                    <button class="navbar-toggler shadow-sm d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Alternar navegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse d-lg-none position-absolute top-100 start-0 end-0 bg-white shadow-sm" id="menuMobile">
+                <ul class="navbar-nav text-center py-2">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nosotros.html" class="nav-link active" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./catalogo.html" class="nav-link">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="usuario-carrito">
-            <ul>
-                <li><a href="./carrito.html">Carrito</a></li>
-                <li><a href="./login.html">Ingresa</a></li>
-            </ul>
-        </div>
     </header>
 
     <!--------------------- CUERPO PRINCIPAL --------------------->
