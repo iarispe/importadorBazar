@@ -138,6 +138,7 @@ nav ul li a.current {
 
 /* ---------- CONTENIDO PRINCIPAL ---------- */
 /* ---------- PIE DE PAGINA ---------- */
+/*
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +176,7 @@ footer h4 {
   display: flex;
   gap: 0.2rem;
 }
+*/
 
 /* ---------- MEDIA QUERIES ---------- */
 
